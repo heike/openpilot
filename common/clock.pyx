@@ -8,7 +8,7 @@ IF UNAME_SYSNAME == "Darwin":
 ELSE:
   from posix.time cimport CLOCK_BOOTTIME
 
-cdef double readclock(clockid_t clock_id):
+cdef double readclock(clockid_t clock_id): # Heike was here
   cdef timespec ts
   cdef double current
 
